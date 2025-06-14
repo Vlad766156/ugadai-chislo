@@ -26,8 +26,7 @@ int main()  {
             return 0;
         }
 
-        while (true) 
-        {
+        while (true) {
             cout << "type the number: ";
             cin >> userGuess;
 
