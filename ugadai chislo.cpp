@@ -4,7 +4,7 @@ using namespace std;
 int main()  {
     int difficulty;
     while (true) {
-    cout << "1. EASY (1/2) 2. NORMAL (10) 3. HARD (100) 4. IMPOSIBLE (10000)\n";
+    cout << "1. EASY (1/2) 2. NORMAL (10) 3. HARD (100) 4. IMPOSIBLE (10000) 5. Exit\n";
     cin >> difficulty;
     int randNumber = 0;
     switch (difficulty) {
