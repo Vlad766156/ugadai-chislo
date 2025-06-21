@@ -1,4 +1,6 @@
 #include <iostream>  
+#include <cstdlib>
+#include <ctime>  
 using namespace std;
 
 int main()  {
@@ -11,16 +13,20 @@ int main()  {
 
         switch (difficulty) {
         case 1:
-            randNumber = 1;
+             srand(time(0));
+             int randomNum = rand() % 3;
             break;
         case 2:
-            randNumber = 6;
+            srand(time(0));
+            int randomNum = rand() % 11;
             break;
         case 3:
-            randNumber = 74;
+            srand(time(0));
+            int randomNum = rand() % 101;
             break;
         case 4:
-            randNumber = 65879;
+            srand(time(0));
+            int randomNum = rand() % 10001;
             break;
         default:
             return 0;
