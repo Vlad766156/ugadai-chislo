@@ -6,27 +6,27 @@ using namespace std;
 int main()  {
     while (true) {
         int difficulty;
-        int randNumber = 0;
-        int userGuess = 0;
-        cout << "1. EASY (1/2) 2. NORMAL (10) 3. HARD (100) 4. IMPOSIBLE (10000) 5. Exit\n";
+        int random_number{};
+        int user_guess{};
+        cout << "1. EASY (1/2) 2. NORMAL (10) 3. HARD (100) 4. IMPOSSIBLE (10000) 5. Exit\n";
         cin >> difficulty;
 
         switch (difficulty) {
         case 1:
             srand(time(0));
-            randNumber = rand() % 2 + 1;
+            random_number = rand() % 2 + 1;
             break;
         case 2:
             srand(time(0));
-            randNumber = rand() % 10 + 1;
+            random_number = rand() % 10 + 1;
             break;
         case 3:
             srand(time(0));
-            randNumber = rand() % 100 + 1;
+            random_number = rand() % 100 + 1;
             break;
         case 4:
             srand(time(0));
-            randNumber = rand() % 10000 + 1;
+            random_number = rand() % 10000 + 1;
             break;
         default:
             return 0;
@@ -34,12 +34,12 @@ int main()  {
 
         while (true) {
             cout << "type the number: ";
-            cin >> userGuess;
+            cin >> user_guess;
 
-            if (userGuess < randNumber) {
+            if (user_guess < random_number) {
                 cout << "Too low!\n";
             }
-            else if (userGuess > randNumber) {
+            else if (user_guess > random_number) {
                 cout << "Too high!\n";
             }
             else {
